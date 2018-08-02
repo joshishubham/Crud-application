@@ -1,0 +1,33 @@
+form{
+
+     margin-left: 1cm;
+     margin-top: -1cm;
+     font-size: 15px;
+}
+div{
+	   
+    font-size: 30px;
+	font-family: arial;
+	margin-left: 1.3cm;
+    margin-top: 1.8cm;	
+    color: #4d4d4d;
+
+}
+
+a{
+    
+    color: white;
+}
+
+.btn-success{
+
+    margin-top: -1.5cm;
+    margin-left: 1cm;
+
+}
+
+.container{
+
+    font-size: 15px;
+    margin-top: .2cm;
+}

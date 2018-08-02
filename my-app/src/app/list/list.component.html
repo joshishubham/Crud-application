@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Create</title>
+  <meta charset="utf-8">
+</head>
+<body>   
+<form>  
+  <div>
+    Create user<br><br>
+    <a class = "btn btn-success btn-md" routerLink = "/create">Create</a>      
+  </div>
+<div class="container">         
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Name.</th>
+        <th>Email.</th>
+        <th>Mobile No.</th>
+        <th>Address.</th>
+        <th>Actions.</th>
+      </tr>
+    </thead>
+   <tbody>
+      <tr *ngFor= "let Data of Crud">
+        <td>{{Data.Name}}</td>
+        <td>{{Data.Email}}</td>
+        <td>{{Data.Mobile}}</td>
+        <td>{{Data.Address}}</td>
+        <td>
+          <a class="btn btn-primary btn-md" [routerLink] = "['/update', Data._id]">Edit <span class = "glyphicon glyphicon-edit"></span></a>
+          <a class="btn btn-warning btn-md" [routerLink] = "['/detail', Data._id]">Detail <span class = "glyphicon glyphicon-file"></span></a>          
+          <button (click)= "deleteData(Data._id)" class="btn btn-danger btn-md">Delete <span class = "glyphicon glyphicon-trash"></span></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+ </div>
+</form>
+</body>
+</html>
